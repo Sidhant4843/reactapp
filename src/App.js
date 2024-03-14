@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import logo from './myimage.JPG';
 import './App.css';
+const d =new Date();
+// System
+const month = d.getMonth();
+const style = {
+  color: '',
+  fontsize: '50px'
+};
+
+if(month===7||month===10||month===11) {
+  style.color = 'red'
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1 style={style}>My name is sidhant</h1>
+    <h2>{ d.getDate() + '/ ' + d.getMonth()+'/ '+d.getFullYear()} </h2>
     </div>
   );
 }
