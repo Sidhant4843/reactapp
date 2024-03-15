@@ -1,4 +1,3 @@
-import logo from './myimage.JPG';
 import './App.css';
 const d =new Date();
 // System
